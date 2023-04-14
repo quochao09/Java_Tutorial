@@ -25,6 +25,7 @@ public class Main {
 		
 		Animals a3 = new Cat(null);
 		a3.makeSound();
+                System.out.println("Hello World");
 	}
 }
 
