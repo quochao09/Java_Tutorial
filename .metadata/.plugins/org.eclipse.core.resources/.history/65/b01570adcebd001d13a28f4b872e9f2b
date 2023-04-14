@@ -1,0 +1,7 @@
+package String01;
+
+public class FormPassWord {
+	public static void main(String[] args) {
+		System.out.println("Vui long nhap mat");
+	}
+}

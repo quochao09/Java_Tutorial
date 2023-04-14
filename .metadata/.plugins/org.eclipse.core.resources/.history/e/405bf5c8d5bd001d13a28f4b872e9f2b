@@ -1,0 +1,8 @@
+package String01;
+
+public class MainLogin {
+	public static void main(String[] args) {
+		FormLogin access = new FormLogin(null, null);
+		access.loGin();
+	}
+}

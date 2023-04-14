@@ -1,0 +1,8 @@
+package String01;
+
+public class FormLogin {
+	public static void main(String[] args) {
+		
+		System.out.println("User Name: ");
+	}
+}

@@ -1,0 +1,33 @@
+package String01;
+import java.util.Scanner;
+public class Check {
+	public boolean checkUser(String temp) {
+		int temp1 = 0;
+		for(int i = 0; i < temp.length(); i++) {
+			if(temp.charAt(i) == '@') {
+				temp1 = i;
+			}
+		}
+		
+		char[] arrCoppy = new char[10];
+		temp.getChars(temp1, temp.length() + 1, arrCoppy, 0);
+		if(arrCoppy.equals("@gmail.com") == true) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	public static void main(String[] args) {
+		String s;
+		Scanner inPut = new Scanner(System.in);
+		s = inPut.nextLine();
+		int temp1 = 0;
+		for(int i = 0; i < s.length(); i++) {
+			if(s.charAt(i) == '@') {
+				temp1 = i;
+			}
+		}
+		System.out.println("index = " + temp1);
+	}
+}

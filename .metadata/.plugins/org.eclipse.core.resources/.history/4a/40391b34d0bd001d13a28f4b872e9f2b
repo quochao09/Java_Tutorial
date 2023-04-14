@@ -1,0 +1,10 @@
+package String01;
+
+public class FormLogin extends User{
+
+	@Override
+	public void loGin() {
+		
+	}
+	
+}

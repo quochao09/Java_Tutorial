@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Java_Tutorial.test&apos; to &apos;Condition&apos;&#x0D;&#x0A;- Original project: &apos;JavaBasic&apos;&#x0D;&#x0A;- Original element: &apos;Java_Tutorial.test&apos;&#x0D;&#x0A;- Renamed element: &apos;Java_Tutorial.Condition&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;test&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Java_Tutorial{test.java[test" matchStrategy="1" name="Condition" qualified="false" references="true" similarDeclarations="false" stamp="1659693794960" textual="false" version="1.0"/>
+</session>

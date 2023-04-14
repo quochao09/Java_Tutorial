@@ -1,0 +1,67 @@
+package String01;
+import java.util.Scanner;
+public class FormLogin extends User{
+
+	// Constructor Function
+	public FormLogin(String userName, String passWord) {
+		super(userName, passWord);
+	}
+	
+	// CheckUserName Function
+	public boolean checkUser(String temp) {
+		int temp1 = 0;
+		for(int i = 0; i < temp.length(); i++) {
+			if(temp.charAt(i) == '@') {
+				temp1 = i;
+			}
+		}
+		
+		char[] arrCoppy = new char[10];
+		temp.getChars(temp1, temp.length() + 1, arrCoppy, 0);
+		if(arrCoppy.equals("@gmail.com") == true) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	
+	// CheckPass Function
+	public boolean checkPass(String temp) {
+		int temp1 = 0, temp2 = 0, temp3 = 0;
+		byte[] arrCheck = temp.getBytes();
+		for(int i = 0; i < arrCheck.length; i++) {
+			if(arrCheck[i] > 48 && arrCheck[i] < 57) {
+				temp1++;
+			}
+			else if(arrCheck[i] > 65 && arrCheck[i] < 90) {
+				temp2++;
+			}
+			else if(arrCheck[i] > 97 && arrCheck[i] < 122) {
+				temp3++;
+			}
+		}
+		if(temp1 > 0 && temp2 > 0 && temp3 > 0 && temp.length() > 8) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	
+	@Override
+	public void loGin() {
+		Scanner inPut = new Scanner(System.in);
+		System.out.println("User Name: ");
+		super.userName = inPut.nextLine();
+		System.out.println("Pass Word: ");
+		super.passWord = inPut.nextLine();
+		while(checkPass(passWord) == false) {
+			System.out.println("Password error !");
+			System.out.println("Pass Word:");
+			super.passWord = inPut.nextLine();
+		}
+		System.out.println("SUCCESSFULL ACCESS !");
+	}
+	
+}

@@ -1,0 +1,5 @@
+package Interface;
+// Là bản thiết của 1 lớp, ý muốn làm tương tự giống đa kế thừa(Java không có đa kế thừa)
+public class main {
+
+}

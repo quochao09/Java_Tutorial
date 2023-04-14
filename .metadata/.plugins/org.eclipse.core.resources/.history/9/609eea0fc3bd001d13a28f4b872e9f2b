@@ -1,0 +1,17 @@
+package String01;
+
+import java.util.Scanner;
+
+public class main {
+	public static void main(String[] args) {
+		Scanner inPut = new Scanner(System.in);
+		String s;
+		System.out.println("Nhap chuoi: ");
+		s = inPut.nextLine();
+		// Hàm length() dùng để lấy độ dài của chuỗi
+		// VD: dùng để kiểm tra độ dài mật khẩu,...
+		System.out.println("Do dai chuoi = " + s.length());
+		// Hàm charAt(vị trí) dùng để lấy ký tự tại vị trí 
+		// VD: dùng để kiểm tra sdt VN phải bắt đầu bằng số 0
+	}
+}

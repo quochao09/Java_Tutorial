@@ -1,0 +1,12 @@
+package Interface;
+// Là bản thiết của 1 lớp, ý muốn làm tương tự giống đa kế thừa(Java không có đa kế thừa)
+// Chỉ có phương thức trừu tượng và các hằng số(public, static,final)
+// Tất cả phương thức ở dạng public
+// Tương tự giống Abstract, nó không thể khởi tạo đối tượng cụ thể
+public class main {
+	public static void main(String[] args) {
+		System.out.println("Test cau a:");
+		MayTinhCasioFx580 mt1 = new MayTinhCasioFx580();
+		System.out.println("1+1 = " + mt1.cong(1, 1));
+	}
+}

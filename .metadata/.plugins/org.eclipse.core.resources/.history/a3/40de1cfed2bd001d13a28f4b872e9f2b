@@ -1,0 +1,41 @@
+package String01;
+import java.util.Scanner;
+public class FormLogin extends User{
+
+	// Constructor Function
+	public FormLogin(String userName, String passWord) {
+		super(userName, passWord);
+	}
+	
+	// CheckPass Function
+	public boolean checkPass(String temp) {
+		int temp1 = 0, temp2 = 0, temp3 = 0;
+		byte[] arrCheck = temp.getBytes();
+		for(int i = 0; i < arrCheck.length; i++) {
+			if(arrCheck[i] > 48 && arrCheck[i] < 57) {
+				temp1++;
+			}
+			else if(arrCheck[i] > 65 && arrCheck[i] < 90) {
+				temp2++;
+			}
+			else if(arrCheck[i] > 97 && arrCheck[i] < 122) {
+				temp3++;
+			}
+		}
+		if(temp1 > 0 && temp2 > 0 && temp3 > 0) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	
+	@Override
+	public void loGin() {
+		String tk;
+		String mk;
+		System.out.println("User Name: ");
+		
+	}
+	
+}

@@ -1,0 +1,15 @@
+package String01;
+
+public class FormLogin extends User{
+
+	public FormLogin(String userName, String passWord) {
+		super(userName, passWord);
+	}
+	
+
+	@Override
+	public void loGin() {
+		System.out.println(super.getUserName());
+	}
+	
+}
